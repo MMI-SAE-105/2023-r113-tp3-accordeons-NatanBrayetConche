@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body>
 
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 
-    <div class="accordeon" x-data="{open : null}">
-      <section>
-        <div>
-          <button @click="open = 1">bouton 1</button>
-          <span x-show="open === 1" x-transition>
-  </body>
+<body>
+
+  <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+
+  <div class="accordeon" x-data="{open : null}">
+    <section>
+      <button @click="open = 1">bouton 1</button>
+
+      <p x-show="open === 1" x-transition>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis
+        cupiditate recusandae! Nostrum
+        voluptatum consectetur iusto labore incidunt tempora neque nobis temporibus, numquam quas assumenda repellendus
+        rem,
+        non dolor harum.</p>
+    </section>
+
+    <section>
+      <button @click="open = 2">bouton 2</button>
+
+      <p x-show="open === 2" x-transition>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis
+        cupiditate recusandae! Nostrum
+        voluptatum consectetur iusto labore incidunt tempora neque nobis temporibus, numquam quas assumenda repellendus
+        rem,
+        non dolor harum.</p>
+    </section>
+
+    <section>
+      <button @click="open = 3">bouton 3</button>
+
+      <p x-show="open === 3" x-transition>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis
+        cupiditate recusandae! Nostrum
+        voluptatum consectetur iusto labore incidunt tempora neque nobis temporibus, numquam quas assumenda repellendus
+        rem,
+        non dolor harum.</p>
+    </section>
+
+
+</body>
+
 </html>
