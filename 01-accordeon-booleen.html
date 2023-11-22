@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon avec des booléens</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body>
-    <h1>Accordéon avec des booléens</h1>
-      <div class="accordeon">
 
-        <section>
-          <div x-data="{open : false}"> <button @click="open = !  open">bouton 1</button>
-            <span x-show="open" x-transition>Hello</span>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis cupiditate recusandae! Nostrum voluptatum
-            consectetur iusto labore incidunt tempora neque nobis temporibus, numquam quas assumenda repellendus rem, non dolor
-            harum.</p>
-        </section>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon avec des booléens</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <h1>Accordéon avec des booléens</h1>
+  <div class="accordeon">
+
+    <section x-data="{open : false}">
+      <button @click="open = !  open">bouton 1</button>
+      <p x-show="open">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis cupiditate recusandae!
+        Nostrum voluptatum
+        consectetur iusto labore incidunt tempora neque nobis temporibus, numquam quas assumenda repellendus rem, non
+        dolor
+        harum.</p>
+    </section>
+
+
+</body>
+
 </html>
